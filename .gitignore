@@ -1,0 +1,8 @@
+*.user
+*.vs
+FPS_LSMT/x64
+FPS_LSMT/Resources
+FPS_LSMT/Logs
+
+# merge originals
+*.orig

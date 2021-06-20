@@ -1,0 +1,95 @@
+# Changelog
+PROJET FPS - LSMT
+
+## [0.0.1] - 2021-05-28
+
+
+## [0.0.1] - 2021-05-27
+### Added
+- Recovering player position using triggers [@Leon]
+- Enemy chases player [@Leon]
+- Using quaternion for boxes [@Jarod]
+- Mouse buttons [@Jarod]
+- Health bar(HUD) [@Jarod]
+
+### Fixed
+- Spam Jump [@Jarod]
+
+### Changed
+- Mouse movement captured with CameraMovements script [@Leon]
+
+
+## [0.0.1] - 2021-05-26
+### Added
+- Loading colliders with 'isTrigger' option [@Leon]
+- Rendering Crosshair [@Jarod]
+- Rigidbody using deltatime [@Jarod]
+- Rigidbody stores vector of colliders it has collided with [@Leon]
+- Clamp on camera pitch [@Jarod]
+- Enter and exit functions for sphere-sphere collisions [@Leon]
+
+### Fixed
+- Improve Box-Sphere collision algorithm [@Leon]
+- Memory leaks [@Benjamin]
+- Camera movement [@Leo]
+- Change scene crash [@Benjamin]
+
+
+## [0.0.1] - 2021-05-25
+### Added
+- sphere colliders to physics manager [@Leon]
+- Sphere-Sphere collision [@Leon]
+- Loading colliders with 'isTrigger' option [@Leon]
+
+### Fixed
+- Player does not move in editor mode [@Leo]
+- Improve Box-Sphere collision algorithm [@Leon]
+
+
+## [0.0.1] - 2021-05-24
+### Added
+- First Person Camera [@Jarod]
+
+
+## [0.0.1] - 2021-05-22
+### Added
+- Switch between editor & in-game camera [@Benjamin]
+
+### Fixed
+- Editor Camera [@Benjamin]
+- Lock/Unlock Camera [@Benjamin]
+
+
+## [0.0.1] - 2021-05-21
+### Added
+- Mouse Capture [@Leon]
+- Scene handles mouse management [@Leon]
+- Camera moves with mouse [@Leon]
+- Friction [@Jarod]
+- Setting up triggers [@Leon]
+
+### Changed
+- Buttons [@Leo]
+- Main Menu [@Leo]
+- Collision Algorithm [@Jarod]
+- Filters [@Leo]
+
+### Fixed
+- Collision fixes [@Jarod]
+- Air resistance & friction [@Jarod]
+- CheckCollision3D warning [@Leo]
+
+
+## [0.0.1] - 2021-05-19
+### Added
+- Setup project [@Leo][@Benjamin][@Leon][@Jarod]
+- Update Components [@Benjamin]
+- Enemy class [@Leon]
+- FollowPlayer class/component [@Leon]
+- Damage Variable [@Leon]
+
+### Fixed
+- Transform Update Correction [@Benjamin]
+- Button Detection [@Leo]
+- Crash at Start [@Leo]
+- Rigidbody [@Jarod]
