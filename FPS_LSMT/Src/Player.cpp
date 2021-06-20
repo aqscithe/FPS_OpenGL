@@ -81,15 +81,15 @@ void Gameplay::Entity::Player::update()
 
 		drawScreen(gameOverTexture);
 	}
-	//if (Application::getInstance()->graph->scene->nbrEnemies <= 0)
-	//{
-	//	gameOverDuration -= Application::getInstance()->time.deltaTime();
-
-	//	if (winScreenTexture == nullptr)
-	//		winScreenTexture = ResourcesManager::getInstance()->addResource<Texture>("Resources//assets//Win_Screen.png");
-
-	//	drawScreen(winScreenTexture);
-	//}
+	if (Application::getInstance()->graph->scene->nbrEnemies <= 0)
+	{
+		gameOverDuration -= Application::getInstance()->time.deltaTime();
+	
+		if (winScreenTexture == nullptr)
+			winScreenTexture = ResourcesManager::getInstance()->addResource<Texture>("Resources//assets//Win_Screen.png");
+	
+		drawScreen(winScreenTexture);
+	}
 
 	if (gameOverDuration <= 0)
 	{

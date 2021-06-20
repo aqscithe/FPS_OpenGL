@@ -193,7 +193,7 @@ bool PhysicsManager::RaycastHit(vec3 origin, vec3 dir, float dist, Hit& hit)
 
 		vec3 interPt;
 		vec3 interNormal;
-		if (Collision::IntersectionSegmentBox(origin, dir, *boxColliders[i], interPt, interNormal, &exitQ))
+		if (Collision::IntersectionSegmentBox(origin, origin + dir, *boxColliders[i], interPt, interNormal, &exitQ))
 		{
 			if (!intersect || Distance(origin, interPt) < Distance(origin, hit.interPt))
 			{
@@ -210,7 +210,7 @@ bool PhysicsManager::RaycastHit(vec3 origin, vec3 dir, float dist, Hit& hit)
 	{
 		vec3 interPt;
 		vec3 interNormal;
-		if (Collision::IntersectionSegmentSphere(origin, dir, *sphereColliders[i], interPt, interNormal))
+		if (Collision::IntersectionSegmentSphere(origin, origin + dir, *sphereColliders[i], interPt, interNormal))
 		{
 			if (sphereColliders[i]->isTrigger)
 				continue;

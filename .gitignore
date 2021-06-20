@@ -3,6 +3,7 @@
 FPS_LSMT/x64
 FPS_LSMT/Resources
 FPS_LSMT/Logs
+FPS_LSMT/imgui.ini
 
 # merge originals
 *.orig

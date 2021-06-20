@@ -25,7 +25,7 @@ void PlayerFire::update()
 	if (input->mlb_down && player->getAmmunition() > 0)
 	{
 		Hit hit;
-		Quaternion rot = QuaternionFromEuler((transform->rotation.x - transformCamera->rotation.x) * DEG2RAD, 
+		Quaternion rot = QuaternionFromEuler((transformCamera->rotation.x) * DEG2RAD, 
 			transform->rotation.y * DEG2RAD, transform->rotation.z * DEG2RAD);
 
 		vec3 dir = Normalize(ToolBox3D::Vector3RotateByQuaternion(vec3{ 0, 0, -1 }, rot));

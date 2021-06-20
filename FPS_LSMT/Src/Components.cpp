@@ -49,10 +49,10 @@ void Components<Component>::updateComponents()
 
 	for (int i = 0; i < components.size(); i++)
 	{
-		for (int f = Application::getInstance()->time.fixing(); f > 0; --f)
-		{
+		//for (int f = Application::getInstance()->time.fixing(); f > 0; --f)
+		//{
 			components[i]->fixedUpdate();
-		}
+		//}
 	}
 
 	for (int i = 0; i < components.size(); i++)

@@ -31,7 +31,7 @@ void FollowPlayer::move()
 	if (hasTarget)
 	{
 		vec3 direction = targetPos - parentTrans->pos;
-		direction.y = 0.f;
+		//direction.y = 0.f;
 
 		raycast.start = parentTrans->pos;
 		raycast.end = targetPos;
@@ -40,7 +40,7 @@ void FollowPlayer::move()
 		vec3 normal;
 		if (!physicsManager->CollisionSegmentBox(&raycast, normal))
 		{
-			speed = 0.1f;
+			speed = 0.3f;
 			vec3 translation = direction * speed * deltaTime;
 			parentTrans->pos += translation;
 			transform->pos = parentTrans->pos;
@@ -72,6 +72,7 @@ void FollowPlayer::update()
 {
 	if (transform == nullptr && rigidbody == nullptr)
 		initTransRigid();
+	playerDetector->origin = parentTrans->pos;
 	checkTarget();
 	move();
 }

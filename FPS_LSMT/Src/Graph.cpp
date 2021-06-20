@@ -4,6 +4,7 @@
 #include "Model.h"
 #include "PhysicsManager.h"
 #include "Debug.h"
+#include "InputManager.h"
 
 using namespace Core::DataStructure;
 using namespace Core::API;
